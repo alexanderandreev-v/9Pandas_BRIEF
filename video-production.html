@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бриф 9Pandas. Разработка видеоролика</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Хедер брифа -->
+    <header>
+        <div class="container col-12 text-center">
+            <a href="https://9pandas.ru/" target="blank">
+                <img src="img/white-logo.svg" alt="Логотип 9Pandas" class="logo">
+            </a>
+            <h1>Бриф на разрботку видеоролика</h1>
+            <p>Пожалуйста, заполните все поля. Поля, отмеченные <span class="important">*</span>, — обязательные для заполнения. <br> Постарайтесь
+                отвечать на вопросы ёмко, но кратко.</p>
+        </div>
+    </header>
+    <!-- Конец хедера брифа -->
+
+    <!-- Вопросы брифа -->
+    <main>
+        <section class="container">
+            <h2 class="col-lg-7 offset-md-1">Общая информация:</h2>
+            <div class="questions offset-md-1">
+                <div class="question col-lg-6">
+                    <p>1. Название рекламируемого продукта, товарной марки, услуги <span class="important">*</span></p>
+                    <input class="form-control" type="text" placeholder="Краткий ответ"
+                        aria-label="deafult input example">
+                </div>
+                <div class="question col-lg-6">
+                    <p>2. В чем уникальность вашего продукта, товарной марки, услуги? <span class="important">*</span></p>
+                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Развернутый ответ"></textarea>
+                </div>
+                <div class="question col-lg-6">
+                    <p>3. Категория ролика <span class="important">*</span></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Имиджевый ролик
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Продуктовый
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            Другое (ваш вариант)
+                        </label>
+                        <div class="space-16"></div>
+                        <input class="form-control" type="text" placeholder="" aria-label="deafult input example">
+                    </div>
+                </div>
+                <div class="question col-lg-6">
+                    <p>4. Впечатление, которое должен произвести видеоролик (если не одно – укажите порядок предпочтений)</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Рациональное
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Эмоциональное
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                        <label class="form-check-label" for="defaultCheck3">
+                            Серьезное
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                        <label class="form-check-label" for="defaultCheck4">
+                            Юмор
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                        <label class="form-check-label" for="defaultCheck5">
+                            Имиджевое
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                        <label class="form-check-label" for="defaultCheck6">
+                            Другое (ваш вариант)
+                        </label>
+                        <div class="space-16"></div>
+                        <input class="form-control" type="text" placeholder="" aria-label="deafult input example">
+                    </div>
+                </div>
+                <div class="question col-lg-6">
+                    <p>5. Какой слоган или девиз используете в рекламе? Если нет слогана, то нужен ли он? С упором на какие качества? <span class="important">*</span></p>
+                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Развернутый ответ"></textarea>
+                </div>
+                <div class="question col-lg-6">
+                    <p>6. Хронометраж ролика <span class="important">*</span></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                        <label class="form-check-label" for="flexRadioDefault4">
+                            До 15 секунд
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                        <label class="form-check-label" for="flexRadioDefault5">
+                            До 30 секунд
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                        <label class="form-check-label" for="flexRadioDefault6">
+                            Не больше 1 минуты
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
+                        <label class="form-check-label" for="flexRadioDefault7">
+                            Другое (ваш вариант)
+                        </label>
+                        <div class="space-16"></div>
+                        <input class="form-control" type="text" placeholder="" aria-label="deafult input example">
+                    </div>
+                </div>
+                <div class="question col-lg-6">
+                    <p>7. География площадки планируемого размещения рекламы <span class="important">*</span></p>
+                    <input class="form-control" type="text" placeholder="Краткий ответ"
+                        aria-label="deafult input example">
+                </div>
+                <div class="question col-lg-6">
+                    <p>8. Какие площадки планируемого размещения? <span class="important">*</span></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                        <label class="form-check-label" for="defaultCheck7">
+                            ТВ
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                        <label class="form-check-label" for="defaultCheck8">
+                            Интернет
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                        <label class="form-check-label" for="defaultCheck9">
+                            BTL
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                        <label class="form-check-label" for="defaultCheck10">
+                            Другое (ваш вариант)
+                        </label>
+                        <div class="space-16"></div>
+                        <input class="form-control" type="text" placeholder="" aria-label="deafult input example">
+                    </div>
+                </div>
+                <div class="question col-lg-6">
+                    <p>9. Креатив <span class="important">*</span></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault18">
+                        <label class="form-check-label" for="flexRadioDefault18">
+                            Нуждаемся в разработке креатива
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault19">
+                        <label class="form-check-label" for="flexRadioDefault19">
+                            Есть готовые идеи
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault20">
+                        <label class="form-check-label" for="flexRadioDefault20">
+                            Другое (ваш вариант)
+                        </label>
+                        <div class="space-16"></div>
+                        <input class="form-control" type="text" placeholder="" aria-label="deafult input example">
+                    </div>
+                </div>
+                <div class="question col-lg-6">
+                    <p>10. Маркетинговая стратегия компании, которую нужно учитывать при создании креатива</p>
+                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="3" placeholder="Развернутый ответ"></textarea>
+                </div>
+                <div class="question col-lg-6">
+                    <p>11. Дополнительные инструменты, используемые при создании видеоролика <span class="important">*</span></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                        <label class="form-check-label" for="defaultCheck11">
+                            Графика
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                        <label class="form-check-label" for="defaultCheck12">
+                            Анимация
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                        <label class="form-check-label" for="defaultCheck13">
+                            Диктор
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+                        <label class="form-check-label" for="defaultCheck14">
+                            Другое (ваш вариант)
+                        </label>
+                        <div class="space-16"></div>
+                        <input class="form-control" type="text" placeholder="" aria-label="deafult input example">
+                    </div>
+                </div>
+                <div class="question col-lg-6">
+                    <p>12. Если есть референсы (примеры), которые Вам нравятся, то оставьте ссылку</p>
+                    <textarea class="form-control" id="exampleFormControlTextarea4" rows="3" placeholder="Развернутый ответ"></textarea>
+                </div>
+                <div class="question col-lg-6">
+                    <p>13. Сроки выполнения <span class="important">*</span></p>
+                    <input class="form-control" type="text" placeholder="Краткий ответ"
+                        aria-label="deafult input example">
+                </div>
+                <div class="question col-lg-6">
+                    <p>14. Какой планируемый бюджет для создания видеоролика? <span class="important">*</span></p>
+                    <input class="form-control" type="text" placeholder="Краткий ответ"
+                        aria-label="deafult input example">
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <div class="space-48"></div>
+        <section class="container">
+            <h2 class="col-lg-7 offset-md-1">Целевая аудитория:</h2>
+            <div class="questions offset-md-1">
+                <div class="question col-lg-6">
+                    <p>1. Пол</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault21">
+                        <label class="form-check-label" for="flexRadioDefault21">
+                            Только мужчины
+                        </label>
+                        <br>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault22">
+                        <label class="form-check-label" for="flexRadioDefault22">
+                            Только женщины
+                        </label>
+                        <br>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault23">
+                        <label class="form-check-label" for="flexRadioDefault23">
+                            В равной степени мужчины и женщины
+                        </label>
+                        <br>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault24">
+                        <label class="form-check-label" for="flexRadioDefault24">
+                            Преимущественно мужчины
+                        </label>
+                        <br>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault25">
+                        <label class="form-check-label" for="flexRadioDefault25">
+                            Преимущественно женщины
+                        </label>
+                        <br>
+                    </div>
+                </div>
+                <div class="question col-lg-6">
+                    <p>2. Возраст</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+                        <label class="form-check-label" for="defaultCheck15">
+                            от 18 до 21 года
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+                        <label class="form-check-label" for="defaultCheck16">
+                            от 22 до 30 лет
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+                        <label class="form-check-label" for="defaultCheck17">
+                            от 31 до 40 лет
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
+                        <label class="form-check-label" for="defaultCheck18">
+                            от 41 до 50 лет
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck19">
+                        <label class="form-check-label" for="defaultCheck19">
+                            от 51 до 60 лет
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck20">
+                        <label class="form-check-label" for="defaultCheck20">
+                            от 61 и старше
+                        </label>
+                    </div>
+                </div>
+                <div class="question col-lg-6">
+                    <p>3. Подробное описание целевой аудитории</p>
+                    <textarea class="form-control" id="exampleFormControlTextarea5" rows="3" placeholder="Развернутый ответ"></textarea>
+                </div>
+            </div>
+        </section>
+        <div class="space-48"></div>
+        <section class="container">
+            <h2 class="col-lg-7 offset-md-1">Конкуренты:</h2>
+            <div class="questions offset-md-1">
+                <div class="question col-lg-6">
+                    <p>1. Конкуренты и как они себя позиционируют</p>
+                    <textarea class="form-control" id="exampleFormControlTextarea6" rows="3" placeholder="Развернутый ответ"></textarea>
+                </div>
+                <div class="question col-lg-6">
+                    <p>2. Основные конкуренты Вашей компании</p>
+                    <textarea class="form-control" id="exampleFormControlTextarea7" rows="3" placeholder="Развернутый ответ"></textarea>
+                </div>
+                <div class="question col-lg-6">
+                    <p>3. Любая другая информация, которую Вы считаете необходимой</p>
+                    <textarea class="form-control" id="exampleFormControlTextarea8" rows="3" placeholder="Развернутый ответ"></textarea>
+                </div>
+            </div>
+        </section>
+        <div class="space-48"></div>
+        <section class="container">
+            <h2 class="col-lg-7 offset-md-1">Ваши контакты:</h2>
+            <div class="questions offset-md-1">
+                <div class="question col-lg-6">
+                    <p>1. Название компании</p>
+                    <input class="form-control" type="text" placeholder="Краткий ответ" aria-label="deafult input example">
+                </div>
+                <div class="question col-lg-6">
+                    <p>2. Имя, Фамилия</p>
+                    <input class="form-control" type="text" placeholder="Краткий ответ" aria-label="deafult input example">
+                </div>
+                <div class="question col-lg-6">
+                    <p>3. Город</p>
+                    <input class="form-control" type="text" placeholder="Краткий ответ" aria-label="deafult input example">
+                </div>
+                <div class="question col-lg-6">
+                    <p>4. E-mail</p>
+                    <input class="form-control" type="text" placeholder="Краткий ответ" aria-label="deafult input example">
+                </div>
+                <div class="question col-lg-6">
+                    <p>5. Телефон</p>
+                    <input class="form-control" type="text" placeholder="Краткий ответ" aria-label="deafult input example">
+                </div>
+                <div class="question col-lg-6">
+                    <p>6. Где Вы узнали о 9 Pandas?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck21">
+                        <label class="form-check-label" for="defaultCheck21">
+                            Sostav.ru
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck22">
+                        <label class="form-check-label" for="defaultCheck22">
+                            Другие СМИ
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck23">
+                        <label class="form-check-label" for="defaultCheck23">
+                            От знакомых, коллег
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck24">
+                        <label class="form-check-label" for="defaultCheck24">
+                            Twitter
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck25">
+                        <label class="form-check-label" for="defaultCheck25">
+                            Instagram
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck26">
+                        <label class="form-check-label" for="defaultCheck26">
+                            Facebook
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" id="defaultCheck27">
+                        <label class="form-check-label" for="defaultCheck27">
+                            Другое (ваш вариант)
+                        </label>
+                        <div class="space-16"></div>
+                        <input class="form-control" type="text" placeholder="" aria-label="deafult input example">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="row offset-md-1">
+            <div class="col-lg-3 p-0">
+                <button class="btn-send" type="submit"><img src="img/ic-arrow.svg" alt="Стрелка"
+                        class="ic-arrow">Отправить бриф</button>
+            </div>
+            <div class="col-lg-3">
+                <small>ОТПРАВЛЯЯ ЗАЯВКУ, ВЫ СОГЛАШАЕТЕСЬ НА НАШУ <a href="https://9pandas.ru/privacy-policy/"
+                        target="blank">ПОЛИТИКУ КОНФИДЕНЦИАЛЬНОСТИ</a></small>
+            </div>
+        </div>
+    </footer>
+    <div class="space-112"></div>
+    <script src="script.js"></script>
+    <script src="SmoothScroll.min.js"></script>
+</body>
+
+</html>
