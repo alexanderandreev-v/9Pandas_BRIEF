@@ -14,14 +14,20 @@ btnSend.addEventListener('mouseout', ()=> {
 });
 
 btnSend.addEventListener('click', ()=> {
-    btnSend.classList.add('disabled');
+    // btnSend.classList.add('disabled');
     for(let i = 0; i < forms.length; i++ ){
-        forms[i].classList.add('disabled');
+        // forms[i].classList.add('disabled');
+        forms[i].value='';
     }
     for(let i = 0; i < inputs.length; i++ ){
-        inputs[i].classList.add('disabled');
+        // inputs[i].classList.add('disabled');
+        inputs[i].value='';
     }
     for(let i = 0; i < labels.length; i++ ){
-        labels[i].classList.add('disabled');
+        // labels[i].classList.add('disabled');
+        labels[i].value='';
     }
 });
+
+
+// document.getElementById('test').value='';
